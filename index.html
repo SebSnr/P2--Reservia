@@ -8,9 +8,73 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/388893eb54.js" crossorigin="anonymous"></script>
     </head>
 <body>
+    <div id="container">
+        <header>
+            <img src="./images/logo/Reservia@3x.png" alt="Reservia logo">
+            <nav>
+                <ol>
+                    <li><a href="#">Hébergement</a></li>
+                    <li><a href="#">Activités</a></li>
+                    <li><a href="#">S'inscrire</a></li>
+                </ol>
+            </nav>
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>            
+            <p>En plein <mark>centre ville</mark> ou en pleine <mark>nature</mark></p>
+        </header>
+        <main>
+            <section id="searchBar">
+                <i class="fas fa-map-marker-alt"></i>
+                <form action="" method="POST">
+                    <div class="searchBar_saisie">
+                        <label for="ville"></label>
+                        <input type="text" name="ville" id="ville" placeholder="Marseille,France">
+                    </div>
+                    <div class="searchBar__buttonSubmit">
+                        <input type="submit" value="Rechercher">
+                    </div>
+                    <div class="searchBar__filtres">
+                        Filtres
+                            <div>
+                                <i class="fas fa-money-bill-wave"></i>
+                                <label for="economique">Économique</label>
+                                <input type="radio" name="economique" id="economique">
+                            </div>
+                            <div>
+                                <i class="fas fa-child"></i>
+                                <label for="Familial">Familial</label>
+                                <input type="radio" name="Familial" id="Familial">
+                            </div>
+                            <div>
+                                <i class="fas fa-heart"></i>
+                                <label for="Romantique">Romantique</label>
+                                <input type="radio" name="Romantique" id="Romantique">
+                            </div>
+                            <div>
+                                <i class="fas fa-dog"></i>
+                                <label for="Animaux autorisés">Animaux autorisés</label>
+                                <input type="radio" name="Animaux autorisés" id="Animaux autorisés">
+                            </div>
+                    </div>
+                </form>
 
+            </section>
+            
+
+
+
+
+        </main>
+
+
+
+
+
+
+
+    </div>
     
 
     
