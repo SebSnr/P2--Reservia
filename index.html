@@ -16,8 +16,8 @@
             <img src="./images/logo/Reservia@3x.png" alt="Reservia logo">
             <nav>
                 <ol>
-                    <li><a href="#">Hébergement</a></li>
-                    <li><a href="#">Activités</a></li>
+                    <li><a href="#ancreHebergement">Hébergement</a></li>
+                    <li><a href="#ancreActivite">Activités</a></li>
                     <li><a href="#">S'inscrire</a></li>
                 </ol>
             </nav>
@@ -32,17 +32,29 @@
                         <label for="ville"></label>
                         <input type="text" name="ville" id="ville" placeholder="Marseille,France">
                     </div>
-                    <div class="searchBar__buttonSubmit">
-                        <input type="submit" value="Rechercher">
+                    <div class="searchBar__btn-submit">
+                        <button type="submit">Rechercher</button>
                     </div>
                     <div class="searchBar__filtres">
                         Filtres
                             <div>
-                                <i class="fas fa-money-bill-wave"></i>
-                                <label for="economique">Économique</label>
-                                <input type="radio" name="economique" id="economique">
+                                <label for="filtre_economique"></label>
+                                <button type="button" name="filtre_economique" id="filtre_economique"><i class="fas fa-money-bill-wave"></i>Économique</button>
                             </div>
                             <div>
+                                <label for="filtre_familial"></label>
+                                <button type="button" name="filtre_familial" id="filtre_familial"><i class="fas fa-child"></i>Familial</button>
+                            </div>
+                            <div>
+                                <label for="filtre_romantique"></label>
+                                <button type="button" name="filtre_romantique" id="filtre_romantique"><i class="fas fa-heart"></i>Romantique</button>
+                            </div>
+                            <div>
+                                <label for="filtre_animaux"></label>
+                                <button type="button" name="filtre_animaux" id="filtre_animaux"><i class="fas fa-dog"></i>Animaux autorisés</button>
+                            </div>
+                            <!-- En stand-bye par rapport à la balise button -->
+                            <!-- <div>
                                 <i class="fas fa-child"></i>
                                 <label for="Familial">Familial</label>
                                 <input type="radio" name="Familial" id="Familial">
@@ -56,28 +68,72 @@
                                 <i class="fas fa-dog"></i>
                                 <label for="Animaux autorisés">Animaux autorisés</label>
                                 <input type="radio" name="Animaux autorisés" id="Animaux autorisés">
-                            </div>
+                            </div> -->
                     </div>
                 </form>
-
             </section>
-            
-
-
-
-
+            <section class="resultats">
+                <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                <div class="resultats__hebergements">
+                    <h2 id="ancreHebergement">Hébergements à Marseille</h2>
+                    <!-- si validé, répéter 6 fois logement1 ... -->
+                    <div class="logement1">
+                        <a href="#">
+                            <div class="resultats__hebergements__photo"></div>
+                            <div class="stars">
+                                <h3>Auberge La Cannebière</h3>
+                                <p>Nuit à partir de <strong class="tarifNuit">25€</strong></p>
+                                <div class="starColoured">☆</div>
+                                <div class="starColoured">☆</div>
+                                <div class="starColoured">☆</div>
+                                <div class="starColoured">☆</div>
+                                <div class="starUncoloured">☆</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="resultats__populaires">
+                    <h2>Les plus populaires</h2>
+                    <i class="fas fa-chart-line"></i> 
+                    <!-- Reprendre la class hebergement avec photo à gauche et a -->
+                </div>
+                <div class="resultats__activites">
+                    <!-- A valider et répéter -->
+                    <h2 id="ancreActivite">Activités à Marseille</h2>
+                    <div class="activite1">
+                        <a href="#">
+                            <div class="resultats__hebergements__photo"></div>
+                            <h3>Vieux Port</h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
-
-
-
-
-
-
-
+        <footer>
+            <div class="aPropos">
+                <h2>A propos</h2>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="nosHebergements">
+                <h2>Nos hébergements</h2>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+            </ul>   
+            </div>
+            <div class="assistance">
+                <h2>Assistance</h2>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
-    
-
-    
 </body>
 </html>
 
