@@ -1,12 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import "./css/header.css";
-@import "./css/main.css";
-@import "./css/footer.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+@import "./header.css";
+@import "./footer.css";
+@import "./searchBar.css";
+@import "./resultats.css";
+
+
+
+/* Bleu : #0065FC
+Bleu clair : #DEEBFF
+Fond gris : #F2F2F2 */
 
 
 html, body,header, main, section, article, aside, footer, h1, h2, h3, p, div, span, a, strong, mark, li, ul, ol, nav {
     font-family: 'Raleway', sans-serif;
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
     font-style: normal;
     font-size: inherit;
@@ -14,12 +22,27 @@ html, body,header, main, section, article, aside, footer, h1, h2, h3, p, div, sp
     text-decoration: none;
     list-style: none;
     background: none;
-    
-
 } 
 
+body {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid purple;
 
-/* A mettre dans main.css */
+}
+
+
+
+
+
+
+
+
+
+
+/* A mettre dans resultats.css */
 .fa-map-marker-alt {
     color: black;
 }
