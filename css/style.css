@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
 @import "./header.css";
 @import "./footer.css";
-@import "./searchBar.css";
+@import "./searchContent.css";
 @import "./resultats.css";
 
 
@@ -12,7 +12,7 @@ Bleu clair : #DEEBFF
 Fond gris : #F2F2F2 */
 
 
-html, body,header, main, section, article, aside, footer, h1, h2, h3, p, div, span, a, strong, mark, li, ul, ol, nav {
+html, body,header, main, section, article, aside, footer, h1, h2, h3, p, div, span, a, strong, mark, li, ul, ol, nav, button {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -22,9 +22,10 @@ html, body,header, main, section, article, aside, footer, h1, h2, h3, p, div, sp
     text-decoration: none;
     list-style: none;
     background: none;
+    border: none;
 } 
 
-body {
+#container {
     max-width: 1200px;
     margin: auto;
     padding-left: 20px;
@@ -42,7 +43,3 @@ body {
 
 
 
-/* A mettre dans resultats.css */
-.fa-map-marker-alt {
-    color: black;
-}

@@ -1,0 +1,145 @@
+.searchBar {
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+
+}
+
+.fa-map-marker-alt {
+    font-size: 1.2em;
+    color: black;
+    background-color: #F2F2F2;
+    padding: 5px 12px;
+    border-radius: 8px 0 0 8px;
+}
+
+.searchBar_saisie {
+    border-top: 1px solid #F2F2F2 ;
+    border-bottom: 1px solid #F2F2F2 ;
+    background-color: white;
+    max-width: 200px;
+}
+
+.searchBar_saisie input {
+    background-color: white;
+    border: none;
+    outline: 0px solid transparent;
+    padding-left: 7px;
+    padding-top: 8px;
+    /* color: crimson; Changer couleur de la saisie */
+}
+
+.searchBar_saisie input::placeholder {
+    color: black;
+    font-style: italic;
+    font-size: 1.2em;
+    line-height: 30px;
+    height: 30px;
+
+}
+
+.searchBar__btn-submit {
+    border-radius: 0 8px 8px 0;
+    border-style: none;
+    background-color: #0065FC;
+    color: white;
+    cursor: pointer;
+}
+
+.searchBar__btn-submit {
+    border-radius: 0 8px 8px 0;
+    border-style: none;
+    background-color: #0065FC;
+    color: white;
+}
+
+/* Filtres */
+
+.searchBar__filtres {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    margin-top: 20px;
+    /* border: solid fuchsia; */
+    height: 30px;
+    line-height: 30px;
+}
+
+.searchBar__filtres p {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.searchBar__filtres .filtres {
+    margin-left: 20px;
+}
+
+.searchBar__filtres .fas {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    width: 20px;
+    height: auto;
+    padding: 9px 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+    /* transition: color 1s, transform 1s; */
+}
+
+
+/* .searchBar__filtres button {
+    cursor: pointer;
+    border: 2px #F2F2F2 solid;
+    border-radius: 15px;
+    padding: 0;
+    padding-right: 10px;
+} */
+
+ 
+.searchBar__filtres button {
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 2px #F2F2F2;
+    border-radius: 25px;
+    padding: 0;
+    padding-right: 12px;
+    
+}
+
+.searchBar__filtres button:hover {
+    color: white;
+    background-color: #0065FC;
+    transition: 2s;
+    /* box-shadow: hidden; règle le problème de bordure mais du coup, trop de bleu déborde */
+    box-shadow: inset 0px 0px 0px 2px #0065FC;
+    border-radius: 25px;
+}
+
+.searchBar__filtres button:focus {
+    color: white;
+    background-color: #0065FC;
+    transition: 2s;
+    outline: none;
+    /* box-shadow: hidden; règle le problème de bordure mais du coup, trop de bleu déborde */
+    box-shadow: inset 0px 0px 0px 2px #0065FC;
+    border-radius: 25px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
