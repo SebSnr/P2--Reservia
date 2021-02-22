@@ -2,7 +2,10 @@
 header {
     padding-top: 20px;
     padding-bottom: 5px;
-    border: 2px solid green;
+    max-width: 1200px;
+    width: 100%;
+
+    
 }
 
 .bandeauMenu {
@@ -16,11 +19,13 @@ header {
 
 header nav ul {
     display: flex;
+
 }
 
 header nav li {
     margin-left: 50px;
     font-size: 1em ;
+
 }
 
 .inscription {
