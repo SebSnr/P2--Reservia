@@ -4,6 +4,7 @@
 @import "./footer.css";
 @import "./searchContent.css";
 @import "./resultats.css";
+@import "./resultatsContent.css";
 
 
 
@@ -31,10 +32,10 @@ body {
 }
 
 #container {
-    min-width:600px;
-    max-width:2000px;
+    /* min-width:600px; */
+    max-width:4000px;
     width: 100%;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
