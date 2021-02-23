@@ -1,5 +1,6 @@
  #resultatsContent {
     margin-top: 3%;
+    margin-bottom: 100px; /* a supp*/
 }
 
 #resultatsContent .fa-info {
@@ -32,7 +33,7 @@
     background-color: white;
     border-radius: 30px;
     padding: 10px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px;              a remettre marge entre box blanche hebergement*/
 }
 
 .smallBox--size1 {
@@ -58,11 +59,6 @@
 
 .smallBox--size2 a{
     display: flex;
-}
-
-.smallBox--size3 img {
-    max-width: 100%;
-    border-radius: 20px 20px 0 0;
 }
 
 
@@ -129,7 +125,7 @@
 .resultats__row1__populaires {
     /* width: 70%; */
     /* max-width: 40%; */
-
+    
 }
 
 .resultats__row1__populaires__titre {
@@ -150,15 +146,89 @@
 /* Les activités */
 
 .resultats__row2__activite {
-    background-color: inherit;
-    /* border: #0065FC solid;     */
+    /* background-color: inherit; */
+    border: #0065FC solid;
+    height: 600px; 
+    width: 1200px;
+}
+
+.resultats__row2__activite--flexbox {
+    display: flex;
+    height: 100%;
+    border: gold solid;
+    /* height: 500px;  */
+    flex-direction : column;
+    flex-wrap : wrap;
+    align-content : stretch;
+    justify-content : center;
+    align-items : stretch;
 }
 
 
+.smallBox--size3  {
+    height: 100%;
+    overflow: hidden;
+    
+}
 
+.smallBox--size3 img {
+    /* max-width: 50%; */
+    max-height: 80%;
+    border-radius: 20px 20px 0 0;
+    border: solid skyblue;
+}
 
+.flexbox-1{
+    flex : 0 1 100%;
+    width : 33%;
+    max-width : 33%;
+    min-width : 33%;
+    border: solid purple;
+    
+}
+.flexbox-2{
+    overflow : auto;
+    flex : 1 1 45%;
+    width : 33%;
+    max-width : 33%;
+    min-width : 33%;
+    border: solid purple;
+    
+}
+.flexbox-3{
+    overflow : auto;
+    flex : 1 1 45%;
+    width : 33%;
+    max-width : 33%;
+    min-width : 33%;
+    border: solid purple;
+}
 
-
+.flexbox-4{
+    flex : 0 1 100%;
+    width : 33%;
+    max-width : 33%;
+    min-width : 33%;
+    border: solid purple;
+    
+}
+.flexbox-5{
+    overflow : auto;
+    flex : 1 1 45%;
+    width : 33%;
+    max-width : 33%;
+    min-width : 33%;
+    border: solid purple;
+    
+}
+.flexbox-6{
+    overflow : auto;
+    flex : 1 1 45%;
+    width : 33%;
+    max-width : 33%;
+    min-width : 33%;
+    border: solid purple;
+}
 
 
 
