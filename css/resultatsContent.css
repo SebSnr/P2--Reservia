@@ -1,9 +1,8 @@
  #resultatsContent {
-    margin-top: 20px;
+    margin-top: 3%;
 }
 
-
- #resultatsContent .fa-info {
+#resultatsContent .fa-info {
     color: #0065FC;
     font-size: 15px;
     height: auto;
@@ -13,57 +12,60 @@
     margin-right: 10px;
 }
 
- .resultats__hebergements {
-     width: 70%;
-     background-color: #F2F2F2;
-     padding: 25px 30px 50px 30px;
-     border-radius: 30px;
+#resultatsContent h2, .fa-chart-line{
+    font-weight: bold;
+    font-size: 1.5em;
 }
-    
-.resultats__hebergements h2 {
-        font-weight: bold;
-        font-size: 1.5em;
-}
-    
-.resultats__hebergements__flexbox {
+
+.resultatContent__row1 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 15px;
 }
 
+.bigBox {
+    background-color: #F2F2F2;
+    /* padding: 25px 30px 50px 30px; */
+    padding: 1% 2% 3% 2%;
+    border-radius: 30px;
+}
 
-.logement {
+.smallBox {
     background-color: white;
     border-radius: 30px;
     padding: 10px;
-    width: 30%;
-    margin-bottom: 3%;
+    margin-bottom: 30px;
 }
 
-.logement img {
-    width: 100%;
+.smallBox--size1 {
+    width: 30%;
+    min-width: 200px;
+    /* min-width: 230px; */
+}
+
+.smallBox--size1 img {
+    max-width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
-.logement__presentation {
-    margin: auto 15px;
-}
-
-.logement__presentation h3 {
-    font-weight: 600;
-}
-
-.logement__presentation p {
-    font-size: 0.9em;
-    line-height: 0em;
+.smallBox--size2 {
     
 }
 
-.tarifNuit
-{
-    font-weight: bold;
+.smallBox--size2 img {
+    height: 100px;    /*Taille fixe !!!! not responsive*/
+    border-radius: 20px 0 0 20px;
+    border: #0065FC solid;
 }
+
+.smallBox--size2 a{
+    display: flex;
+}
+
+.smallBox--size3 img {
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+
 
 .stars {
     display: inline;
@@ -79,9 +81,98 @@
     font-size: 1.1em;
 }
 
+
+
+
+/* Partie hébergement */
+
+.resultats__row1__hebergements {
+    margin-right: 3%;
+    max-width: 60%;
+}
+
+.resultats__row1__hebergements__grille {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.row1__smallBox__presentation {
+    margin: auto 4%;
+}
+
+.row1__smallBox__presentation h3 {
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+.row1__smallBox__presentation p {
+    font-size: 0.7em;
+    line-height: 0em; 
+}
+
+.tarifNuit
+{
+    font-weight: bold;
+}
+
 .afficherPlus  {
     font-weight: bold;
-    /* border: #0065FC solid; */
 }
+
+
+
+
+/* Partie les plus populaires */
+
+.resultats__row1__populaires {
+    /* width: 70%; */
+    /* max-width: 40%; */
+
+}
+
+.resultats__row1__populaires__titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.resultats__row1__populaires__grille {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+
+/* Les activités */
+
+.resultats__row2__activite {
+    background-color: inherit;
+    /* border: #0065FC solid;     */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
