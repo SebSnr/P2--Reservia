@@ -28,12 +28,12 @@ header nav li {
 
 }
 
-nav li:last-child a {
+header nav li:last-child a {
     font-weight: bold;
     color: #0065FC;
 }
 
-nav a:hover {
+header nav a:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC ;
     padding-top: 30px;
