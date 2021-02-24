@@ -1,6 +1,6 @@
- /* données générales */
- 
- #resultatsContent {
+/* données générales */
+
+#resultatsContent {
     margin-top: 3%;
     margin-bottom: 100px; /* a supp*/
 }
@@ -22,22 +22,29 @@
 
 #resultatsContent h2 {
     font-weight: bold;
-    font: 1.5em;
-    height: 30px;
-}
-#resultatsContent h3 {
-    font-weight: 600;
-    font-size: 0.9em;
-    font: 0.8em;
+    font-size: 1.3em;
 }
 
-#resultatsContent p {
-    font: 0.7em;
+#resultatsContent h3 {
+    font-weight: bold;
+}
+
+#resultatsContent p, .fa-star--coloured, .fa-star--uncoloured{
+    font-size: 0.8em;
+}
+
+.fa-star--coloured {
+    color: #0065FC;
+}
+
+.fa-star--uncoloured {
+    color: #d6d6d6;
 }
 
 .bigBox {
     background-color: #F2F2F2;
     border-radius: 30px;
+    padding: 1% 2% 0% 2%;
 }
 
 .smallBox {
@@ -47,7 +54,26 @@
 }
 
 .smallBox__presentation {
-    margin: auto 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* margin: 6% 2% 2% 4%; */
+    /* border: orange solid; */
+}
+.smallBox__presentation h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+.smallBox__presentation p span:last-child, 
+.bigBox-1 a:last-child {
+    font-weight: bold;
+}
+
+.stars {
+    display: flex;
 }
 
 
@@ -55,7 +81,7 @@
 /* Partie hébergement */
 
 .grid-1 {
-    height: 500px;
+    height: 470px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -66,49 +92,50 @@
 .bigBox-1 {
     margin-right: 3%;
     max-width: 60%;
-    padding: 1% 2% 3% 2%;
-
 }
 
 .bigBox-1 .smallBox {
     width: 28%;
     min-width: 100px;
-    max-height: 200px ;
+    max-height: 220px ;
 }
+
+/* .bigBox-1 picture {              rétrécir height par picture puis overflow??
+    width: 100%;
+    overflow: hidden;
+} */
 
 .bigBox-1 .smallBox img {
     max-width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
+.bigBox-1 .smallBox__presentation {
+    margin: auto 10px;
+    /* border: solid gold; */
+}
+
 .bigBox-1 > a {
     display: block;
-    margin-top: 25px;
+    margin-top: 6%;
 }
 
 .bigBox-1 h3 {
-    margin-top: 0px;
+    /* margin-top: 4px; */
+    /* border: red solid; */
 }
 
 .bigBox-1 p {
-    line-height: 0; 
+    line-height: 0px; 
     margin-bottom: 9px;
-}
-
-.smallBox__presentation p span:last-child, .bigBox-1 a:last-child {
-    font-weight: bold;
-}
-
-.fa-star--coloured{
-    color: #0065FC;
-}
-
-.fa-star--uncoloured{
-    color: #d6d6d6;
 }
 
 /* Row 1 bigBox-2  */
 /* Partie les plus populaires */
+
+.bigBox-2 {
+    height: 100%;
+}   
 
 .column3 {
     height: 87%;
@@ -118,18 +145,22 @@
 }
 
 
-.bigBox-2 {
-    height: 100%;
-    padding: 0 2%;
-}   
 
 .bigBox-2 .smallBox {
-    /* margin-bottom: 50px; */
+    
+    
+    
+}
+
+.bigBox-2 picture {
+    width: 37%;
+    overflow: hidden;
 }
 
 .bigBox-2 .smallBox img {
-    max-height: 150px;  
+    max-height: 150px;
     border-radius: 20px 0 0 20px;
+    height: 100%;
 }
 
 .bigBox-2 .smallBox a{
@@ -147,10 +178,23 @@
     right: 0;
 }
 
-.bigBox-2 h3 {
-
-    /*                              a supp ? */
+.bigBox-2 .smallBox__presentation {
+    margin: 15px 15px;
 }
+
+.bigBox-2 h3 {
+    /* border:  purple so   lid; */
+}
+
+.bigBox-2 .smallBox__presentation p{
+    margin-bottom: 25%;
+}
+
+
+
+/* .bigBox-2 .fa-star--coloured, .bigBox-2 .fa-star--uncoloured {
+    margin-top: 37px;
+} */
 
 
 /* Row 2 */
@@ -179,7 +223,7 @@
     /* border-radius: 30px; */
     padding: 0;
     overflow: hidden;
-    box-shadow: 4px 4px 4px #F2F2F2; 
+    box-shadow: 4px 4px 4px #F2F2F2;
 }
 
 .smallBox-3 img {
@@ -208,7 +252,7 @@
 
 .grid-2 h3 {
     margin-left: 18px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 
