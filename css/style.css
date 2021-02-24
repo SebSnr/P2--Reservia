@@ -48,6 +48,15 @@ header, main {
     width: 100%;
 }
 
+h1 {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+p {
+    font-size: 1em;
+}
 /* body{width:90%;margin:auto;min-width:600px;max-width:2000px} */
 
 

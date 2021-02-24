@@ -13,13 +13,13 @@
 <body>
     <div id="container">
         <header>
-            <div class="bandeauMenu">
-                <a href="index.html"><img src="./images/logo/Reservia.svg" id="bandeauMenu__logo" alt="Reservia logo"></a>
+            <div class="banner">
+                <a href="index.html"><img src="./images/logo/Reservia.svg" id="banner__logo" alt="Reservia logo"></a>
                 <nav>
                     <ul>
-                        <li id="pageEnCours"><a href="#ancreHebergement">Hébergement</a></li>
+                        <li><a href="#ancreHebergement">Hébergement</a></li>
                         <li><a href="#ancreActivite">Activités</a></li>
-                        <li><a href="#"><span class="inscription">S'inscrire</span></a></li>
+                        <li><a href="#">S'inscrire</a></li>
                     </ul>
                 </nav>
             </div>
@@ -30,32 +30,19 @@
             <section id="searchContent">
                 <form class="searchBar" action="#" method="POST">
                     <i class="fas fa-map-marker-alt"></i>
-                    <div class="searchBar_saisie">
-                            <label for="ville"></label>
-                            <input type="text" name="ville" id="ville" placeholder="Marseille, France">
-                    </div>
+                        <label for="ville"></label>
+                        <input type="text" name="ville" id="ville" placeholder="Marseille, France">
                     <button class="searchBar__btn-submit" type="submit">Rechercher</button>
                 </form>
                     
-                <form class="searchBar__filtres" action="#" method="POST">
+                <form class="filtersBar" action="#" method="POST">
                         <p>Filtres</p>
-                        <div class="filtres">
                             <label for="filtres_economique"></label>
                             <button type="button" name="filtre_economique" id="filtre_economique"><i class="fas fa-money-bill-wave"></i>Économique</button>
-                        </div>
-                        <div class="filtres">
                             <label for="filtres_familial"></label>
                             <button type="button" name="filtre_familial" id="filtre_familial"><i class="fas fa-child"></i>Familial</button>
-                        </div>
-                        <div class="filtres">
-                            <label for="filtres_romantique"></label>
                             <button type="button" name="filtre_romantique" id="filtre_romantique"><i class="fas fa-heart"></i>Romantique</button>
-                        </div>
-                        <div class="filtres">
-                            <label for="filtres_animaux"></label>
                             <button type="button" name="filtre_animaux" id="filtre_animaux"><i class="fas fa-dog"></i>Animaux autorisés</button>
-                        </div>
-                                        <!-- En stand-bye par rapport à la balise button -->
                                         <!-- <div>
                                             <i class="fas fa-child"></i>
                                             <label for="Familial">Familial</label>

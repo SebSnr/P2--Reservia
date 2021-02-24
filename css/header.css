@@ -8,12 +8,12 @@ header {
     
 }
 
-.bandeauMenu {
+.banner {
     display: flex;
     justify-content: space-between;
 }
 
-#bandeauMenu__logo {
+#banner__logo {
     max-width: 90px;
 }
 
@@ -28,27 +28,17 @@ header nav li {
 
 }
 
-.inscription {
+nav li:last-child a {
     font-weight: bold;
     color: #0065FC;
 }
 
-#pageEnCours a {
+nav a:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC ;
     padding-top: 30px;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-header h1 {
-    font-size: 1.1em;
-    font-weight: bold;
-}
-
-header p {
-    font-size: 0.9em;
-    margin-top: -9px;
 }
 
 
