@@ -46,7 +46,7 @@
     display: flex;
     justify-content: flex-start;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 25px;
     /* border: solid fuchsia; */
     /* height: 30px; */
     line-height: 30px;
@@ -62,7 +62,7 @@
     color: #0065FC;
     background-color: #DEEBFF;
     font-size: 1.4em;
-    padding: 12px 14px;
+    padding: 12px 13px;
     border-radius: 50%;
     margin-right: 10px;
     position: absolute;
@@ -70,9 +70,19 @@
     left: -10px ;
 }
 
+.filtersBar .fa-money-bill-wave {
+    padding: 12px 11px;
+}
+
 .filtersBar .fa-child {
     padding: 12px 16px;
 }
+
+.fa-dog {
+    padding: 12px 14px;
+}
+
+
 
 .filtersBar button {
     background-color: white;
@@ -88,17 +98,20 @@
     font-weight: bold;  
 }
 
-.filtersBar button:hover, .filtersBar button:focus {
+.filtersBar button:hover {
     color: white;
     background-color: #0065FC;
     transition: 2s;
     /* box-shadow: hidden; règle le problème de bordure mais du coup, trop de bleu déborde */
     box-shadow: inset 0px 0px 0px 2px #0065FC;
     border-radius: 25px;
-    outline: none;
     transition: color 0.5s; 
     transform: 1s;
     transform: scale(1.1, 1.1);
+}
+
+.filtersBar button:focus {
+    outline: none;
 }
 
 
