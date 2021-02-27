@@ -99,61 +99,32 @@
     margin-bottom: 3%;
 }
 
+.grid-1__smallBox--photo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 110px;
+    max-height: 600px;
+    border-radius: 20px 20px 0 0;  
+}
+
 .grid-1__smallBox--photo-1 {
     background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 110px;
-    max-height: 600px;
-
-    border-radius: 20px 20px 0 0;
 }
-
 .grid-1__smallBox--photo-2 {
     background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 110px;
-    max-height: 600px;
-    border-radius: 20px 20px 0 0;
 }
-
 .grid-1__smallBox--photo-3 {
     background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 110px;
-    max-height: 600px;
-    border-radius: 20px 20px 0 0;  
 }
-
 .grid-1__smallBox--photo-4 {
     background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 110px;
-    max-height: 600px;
-    border-radius: 20px 20px 0 0;  
 }
-
 .grid-1__smallBox--photo-5 {
     background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-    background-repeat: no-repeat;
-       background-size: cover;
-    min-height: 110px;
-    max-height: 600px;
-    border-radius: 20px 20px 0 0;
 }
-
 .grid-1__smallBox--photo-6 {
     background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 110px;
-    max-height: 600px;
-    border-radius: 20px 20px 0 0;
 }
 
 .bigBox-1 .smallBox__presentation {
@@ -207,34 +178,25 @@
     justify-content: space-between;
 }
 
-.column3__smallBox--photo-1 {
-    background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+.column3__smallBox--photo {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* max-width: 200px; */
     min-width: 100px;
     max-width: 600px;
     border-radius: 20px 0 0 20px;
+}
+
+.column3__smallBox--photo-1 {
+    background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
 }
 
 .column3__smallBox--photo-2 {
     background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-width: 100px;
-    max-width: 600px;
-    border-radius: 20px 0 0 20px;
 }
 
 .column3__smallBox--photo-3 {
     background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 100px;
-    max-width: 600px;
-    border-radius: 20px 0 0 20px;
 }
 
 /* Row 2 */
@@ -243,7 +205,7 @@
 
 .resultatsContent__row2 {
     background-color: inherit;
-    height: 490px; 
+    height: 400px; 
     max-width: 1200px;
     padding-top: 30px;
 }
@@ -259,26 +221,12 @@
     align-items : stretch;
 }
 
-.grid-2 .smallBox {
-    /* border-radius: 30px; */
-    padding: 0;
-    overflow: hidden;
-    box-shadow: 4px 4px 4px #F2F2F2;
-}
-
-.smallBox-3 img {
-    max-height: 448px;
-    border-radius: 20px 20px 0 0;
-}
-
-.smallBox-4 img {
-    max-height: 190px;
-    border-radius: 20px 20px 0 0;
-}
-
 .grid-2__box {
     width : 22%;
     max-width : 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .grid-2__box-1, .grid-2__box-4 {
@@ -286,14 +234,63 @@
 }
 
 .grid-2__box-2, .grid-2__box-3, .grid-2__box-5, .grid-2__box-6 {
-    overflow : hidden;
-    /* flex : 1 1 25%; */
+    flex : 0 0 45%;
 }
 
 .grid-2 h3 {
-    margin-left: 18px;
-    margin-top: 15px;
+    flex-basis: 50px;
+    line-height: 50px;
+    margin: 0;
+    padding-top: auto;
+    padding-left: 15px;
 }
+
+.grid-2 .smallBox {
+    padding: 0;
+    box-shadow: 4px 4px 4px #F2F2F2;
+}
+
+.grid-2__smallBox--photo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+    background-position: center;
+}
+
+
+
+.grid-2__smallBox--photo-1 {
+    background-image: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.grid-2__smallBox--photo-2 {
+    background-image: url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.grid-2__smallBox--photo-3 {
+    background-image: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.grid-2__smallBox--photo-4 {
+    background-image: url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.grid-2__smallBox--photo-5 {
+    background-image: url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.grid-2__smallBox--photo-6 {
+    background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
 
 
 
