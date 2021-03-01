@@ -14,35 +14,35 @@
     <div id="container">
         <header>
             <div class="banner">
-                <a href="index.html"><img src="./images/logo/Reservia.svg" id="banner__logo" alt="Reservia logo"></a>
+                <a href="index.html"><img src="./images/logo/Reservia.svg" alt="Reservia logo"></a>
                 <nav>
                     <ul>
                         <li><a href="#ancreHebergement">Hébergement</a></li>
                         <li><a href="#ancreActivite">Activités</a></li>
-                        <li><a href="#">S'inscrire</a></li>
                     </ul>
                 </nav>
+                <button type="button" name="s_incrire" disabled="">S'inscrire</button>
             </div>
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>            
             <p>En plein <mark>centre ville</mark> ou en pleine <mark>nature</mark></p>
         </header>
         <main>
-       <div>
             <section id="searchContent">
                 <form class="searchBar" action="#" method="POST">
                     <i class="fas fa-map-marker-alt"></i>
-                        <label for="ville"></label>
-                        <input type="text" name="ville" id="ville" placeholder="Marseille, France">
-                    <button class="searchBar__btn-submit" type="submit">Rechercher</button>
+                    <label for="ville"></label>
+                    <input type="text" name="ville" id="ville" placeholder="Marseille, France">
+                    <button class="searchBar__btn-submit" type="submit"><i class="fas fa-search"></i><span>Rechercher</span></button>
                 </form>
                     
                 <div class="filtersBar">
                         <p>Filtres</p>
-                        <button type="button" name="filtre_economique" id="filtre_economique"><i class="fas fa-money-bill-wave"></i>Économique</button>
-                        <button type="button" name="filtre_familial" id="filtre_familial"><i class="fas fa-child"></i>Familial</button>
-                        <button type="button" name="filtre_romantique" id="filtre_romantique"><i class="fas fa-heart"></i>Romantique</button>
-                        <button type="button" name="filtre_animaux" id="filtre_animaux"><i class="fas fa-dog"></i>Animaux autorisés</button>
-            
+                        <ul>
+                            <li><button type="button" name="filtre_economique" id="filtre_economique"></i><i class="fas fa-money-bill-wave"></i>Économique</button></li>
+                            <li><button type="button" name="filtre_familial" id="filtre_familial"><i class="fas fa-child"></i>Familial</button></li>
+                            <li><button type="button" name="filtre_romantique" id="filtre_romantique"><i class="fas fa-heart"></i>Romantique</button></li>
+                            <li><button type="button" name="filtre_animaux" id="filtre_animaux"><i class="fas fa-dog"></i>Animaux autorisés</button></li>
+                    </ul>
                 </div>
                                
             </section>
@@ -55,7 +55,7 @@
                         <div class="grid-1">
                             <div class="smallBox">
                                 <a href="#">
-                                    <div class="grid-1__smallBox--photo grid-1__smallBox--photo-1"></div>
+                                    <div class="smallBox--photo grid-1__smallBox--photo grid-1__smallBox--photo-1"></div>
                                     <div class="smallBox__presentation">
                                         <h3>Auberge La Cannebière</h3>
                                         <p>Nuit à partir de <span>25€</span></p>
@@ -65,7 +65,7 @@
                             </div>
                             <div class="smallBox">
                                 <a href="#">
-                                    <div class="grid-1__smallBox--photo grid-1__smallBox--photo-2"></div>
+                                    <div class="smallBox--photo grid-1__smallBox--photo grid-1__smallBox--photo-2"></div>
                                     <div class="smallBox__presentation">
                                         <h3>Hôtel du port</h3>
                                         <p>Nuit à partir de <span>52€</span></p>
@@ -75,7 +75,7 @@
                             </div>
                             <div class="smallBox">
                                 <a href="#">
-                                    <div class="grid-1__smallBox--photo grid-1__smallBox--photo-3"></div>
+                                    <div class="smallBox--photo grid-1__smallBox--photo grid-1__smallBox--photo-3"></div>
                                     <div class="smallBox__presentation">
                                         <h3>Hôtel Les mouettes</h3>
                                         <p>Nuit à partir de <span>76€</span></p>
@@ -86,7 +86,7 @@
                             </div>
                             <div class="smallBox">
                                 <a href="#">
-                                    <div class="grid-1__smallBox--photo grid-1__smallBox--photo-4"></div>
+                                    <div class="smallBox--photo grid-1__smallBox--photo grid-1__smallBox--photo-4"></div>
                                     <div class="smallBox__presentation">
                                         <h3>Hôtel de la mer</h3>
                                         <p>Nuit à partir de <span>46€</span></p>
@@ -97,7 +97,7 @@
                             </div>
                             <div class="smallBox">
                                 <a href="#">
-                                    <div class="grid-1__smallBox--photo grid-1__smallBox--photo-5"></div>
+                                    <div class="smallBox--photo grid-1__smallBox--photo grid-1__smallBox--photo-5"></div>
                                     <div class="smallBox__presentation">
                                         <h3>Auberge Le Panier</h3>
                                         <p>Nuit à partir de <span>23€</span></p>
@@ -107,7 +107,7 @@
                             </div>
                             <div class="smallBox">
                                 <a href="#">
-                                    <div class="grid-1__smallBox--photo grid-1__smallBox--photo-6"></div>
+                                    <div class="smallBox--photo grid-1__smallBox--photo grid-1__smallBox--photo-6"></div>
                                     <div class="smallBox__presentation">
                                         <h3>Hôtel chez Amina</h3>
                                         <p>Nuit à partir de <span>96€</span></p>
@@ -123,7 +123,7 @@
                         <div class="column3 ">
                         <div class="smallBox">
                             <a href="#">
-                                <div class="column3__smallBox--photo column3__smallBox--photo-1"></div>
+                                <div class="smallBox--photo column3__smallBox--photo column3__smallBox--photo-1"></div>
                                 <div class="smallBox__presentation">
                                     <h3>Hôtel Le soleil du matin</h3>
                                     <p>Nuit à partir de <span>128€</span></p>
@@ -133,7 +133,7 @@
                         </div>
                         <div class="smallBox">
                                 <a href="#">
-                                    <div class="column3__smallBox--photo column3__smallBox--photo-2"></div>
+                                    <div class="smallBox--photo column3__smallBox--photo column3__smallBox--photo-2"></div>
                                     <div class="smallBox__presentation">
                                         <h3>Au coeur de l'eau<br>Chambre d'hôtes</h3>
                                         <p>Nuit à partir de <span>71€</span></p>
@@ -143,7 +143,7 @@
                         </div>
                         <div class="smallBox">
                                 <a href="#">
-                                    <div class="column3__smallBox--photo column3__smallBox--photo-3"></div>
+                                    <div class="smallBox--photo column3__smallBox--photo column3__smallBox--photo-3"></div>
                                     <div class="smallBox__presentation">
                                         <h3>Hôtel Tout bleu et Blanc</h3>
                                         <p>Nuit à partir de <span>68€</span></p>
@@ -157,28 +157,28 @@
                 <div class="resultatsContent__row2">
                     <h2 id="ancreActivite">Activités à Marseille</h2>
                     <div class="grid-2">
-                            <a href="#" class="smallBox  grid-2__box grid-2__box-1">
-                                <div class="grid-2__smallBox--photo grid-2__smallBox--photo-1"></div>
+                            <a href="#" class="smallBox grid-2__box grid-2__box-1">
+                                <div class="smallBox--photo grid-2__smallBox--photo grid-2__smallBox--photo-1"></div>
                                 <h3>Vieux Port</h3>
                             </a>
-                            <a href="#" class="smallBox  grid-2__box grid-2__box-2">
-                                <div class="grid-2__smallBox--photo grid-2__smallBox--photo-2"></div>
+                            <a href="#" class="smallBox grid-2__box grid-2__box-2">
+                                <div class="smallBox--photo grid-2__smallBox--photo grid-2__smallBox--photo-2"></div>
                                 <h3>Fort de Pomègues</h3>
                             </a>
-                            <a href="#" class="smallBox  grid-2__box grid-2__box-3">
-                                <div class="grid-2__smallBox--photo grid-2__smallBox--photo-3"></div>
+                            <a href="#" class="smallBox grid-2__box grid-2__box-3">
+                                <div class="smallBox--photo grid-2__smallBox--photo grid-2__smallBox--photo-3"></div>
                                 <h3>Îles du Frioul</h3>
                             </a>
-                            <a href="#" class="smallBox  grid-2__box grid-2__box-4">
-                                <div class="grid-2__smallBox--photo grid-2__smallBox--photo-4"></div>
+                            <a href="#" class="smallBox grid-2__box grid-2__box-4">
+                                <div class="smallBox--photo grid-2__smallBox--photo grid-2__smallBox--photo-4"></div>
                                 <h3>Parc National des Calanques</h3>
                             </a>
-                            <a href="#" class="smallBox  grid-2__box grid-2__box-5">
-                                <div class="grid-2__smallBox--photo grid-2__smallBox--photo-5"></div>
+                            <a href="#" class="smallBox grid-2__box grid-2__box-5">
+                                <div class="smallBox--photo grid-2__smallBox--photo grid-2__smallBox--photo-5"></div>
                                 <h3>Notre-Dame-de-la-Garde</h3>
                             </a>
-                            <a href="#" class="smallBox  grid-2__box grid-2__box-6">
-                                <div class="grid-2__smallBox--photo grid-2__smallBox--photo-6"></div>
+                            <a href="#" class="smallBox grid-2__box grid-2__box-6">
+                                <div class="smallBox--photo grid-2__smallBox--photo grid-2__smallBox--photo-6"></div>
                                 <h3>Parc Longchamps</h3>
                             </a>
                     </div>

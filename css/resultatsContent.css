@@ -1,7 +1,6 @@
 /* données générales */
 
 #resultatsContent {
-    margin-top: 3%;
     margin-bottom: 100px; /* a supp*/
 }
 
@@ -18,7 +17,6 @@
 .resultatContent__row1 {
     display: flex;
     justify-content: space-between;
-    /* height: 650px; */
 }
 
 #resultatsContent h2 {
@@ -53,14 +51,18 @@
     padding: 10px;
 }
 
+.smallBox--photo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .smallBox__presentation {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    /* margin: 6% 2% 2% 4%; */
-    /* border: orange solid; */
 }
+
 .smallBox__presentation h3 {
     margin-bottom: 0;
     margin-top: 0;
@@ -83,7 +85,7 @@
 .grid-1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .bigBox-1 {
@@ -94,15 +96,14 @@
 
 .bigBox-1 .smallBox {
     width: 28%;
-    min-width: 100px;
+    min-width: 180px;
     max-height: 220px ;
-    margin-bottom: 3%;
+    margin-bottom: 30px;
+    margin-right: 15px;
 }
 
 .grid-1__smallBox--photo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    
     min-height: 110px;
     max-height: 600px;
     border-radius: 20px 20px 0 0;  
@@ -158,19 +159,6 @@
     position: absolute;
     right: 0;
 }
-
-.bigBox-2 .smallBox a {
-    display: flex;
-}
-
-.bigBox-2 .smallBox__presentation {
-    margin: 15px 15px;
-}
-
-.bigBox-2 .smallBox__presentation p{
-    margin-bottom: 25%;
-}
-
 .column3 {
     height: 87%;
     display: flex;
@@ -178,10 +166,12 @@
     justify-content: space-between;
 }
 
+.column3 .smallBox {
+    margin-bottom: 30px;
+
+}
+
 .column3__smallBox--photo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     min-width: 100px;
     max-width: 600px;
     border-radius: 20px 0 0 20px;
@@ -198,6 +188,19 @@
 .column3__smallBox--photo-3 {
     background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
+
+.bigBox-2 .smallBox a {
+    display: flex;
+}
+
+.bigBox-2 .smallBox__presentation {
+    margin: 15px 15px;
+}
+
+.bigBox-2 .smallBox__presentation p{
+    margin-bottom: 25%;
+}
+
 
 /* Row 2 */
 /* Les activités */
@@ -251,46 +254,77 @@
 }
 
 .grid-2__smallBox--photo {
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100%;
     border-radius: 20px 20px 0 0;
-    background-position: center;
 }
-
-
 
 .grid-2__smallBox--photo-1 {
     background-image: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    background-repeat: no-repeat;
-    height: 100%;
 }
 .grid-2__smallBox--photo-2 {
     background-image: url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    background-repeat: no-repeat;
-    height: 100%;
 }
 .grid-2__smallBox--photo-3 {
     background-image: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-    background-repeat: no-repeat;
-    height: 100%;
 }
 .grid-2__smallBox--photo-4 {
     background-image: url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-    background-repeat: no-repeat;
-    height: 100%;
 }
 .grid-2__smallBox--photo-5 {
     background-image: url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-    background-repeat: no-repeat;
-    height: 100%;
 }
 .grid-2__smallBox--photo-6 {
     background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-    background-repeat: no-repeat;
-    height: 100%;
 }
 
 
+
+@media screen and (max-width: 768px) {
+    .resultatContent__row1 {
+        flex-direction: column-reverse;
+    }
+
+    .column3__smallBox--photo {
+        width: 40%;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .grid-1, .grid-2 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+
+    .bigBox-1 .smallBox {
+        width: auto;
+    }
+
+
+
+
+
+
+/* A continuer */
+
+
+    .resultatsContent__row2 {
+        height: auto;
+    }
+
+    .grid-2 .smallBox
+     {
+        /* width: 100%; */
+    }
+
+    .grid-2__box-1, .grid-2__box-2, .grid-2__box-3, .grid-2__box-4, .grid-2__box-5, .grid-2__box-6 {
+        flex : 1 1 auto;
+    }
+
+    .grid-2__box {
+        /* width : 100%; */
+    }
+
+}
 
 
 
