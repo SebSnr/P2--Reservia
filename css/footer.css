@@ -1,16 +1,10 @@
-footer { 
-    background-color: #F2F2F2;
-    max-width: 4000px;
-    width: 100%;
-    margin-left: 20px;
-    margin:  auto;
-    overflow: visible;
-}
 
 .footer__nav {
+    max-width: 1340px;
     display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 30px auto 0 auto; */
     /* border: solid hotpink; */
 
 
@@ -18,16 +12,28 @@ footer {
 
 .footer__nav__rubrique {
     margin-right: 10%;
-    /* margin-right: 110px; */
-    margin-left: 5%;
 }
 
 .footer__nav__rubrique h2 {
     font-weight: bold;
 }
 
-ul {
+footer ul {
     /* border : saddlebrown solid; */
     padding-left: 0;
-    line-height: 30px;
+    line-height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__nav {
+        flex-direction: column;
+    }
+    /* footer li{
+        margin-bottom: 40px;
+    } */
+    footer ul li a {
+        display: block;
+        line-height: 55px;
+    }
+        
 }

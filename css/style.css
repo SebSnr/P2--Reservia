@@ -15,17 +15,33 @@ body {
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
-    padding: 0px 15px 0px 15px;
     margin-left: auto;
     margin-right: auto;
 } 
 #container {
-    max-width:1200px;
-    width: 100%;
+    max-width: 1340px;
+    padding: 0px 15px 0px 15px;
+    /* width: 100%; */
     margin: auto;
 }
 
-a {
+footer { 
+    background-color: #F2F2F2;
+    /* border: blue solid; */
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+h2, h3 {
+    font-size: 1em;
+}
+
+a, p {
     color: black;
     text-decoration: none;
     font-weight: initial;
@@ -33,6 +49,10 @@ a {
 
 li {
     list-style: none;
+}
+
+strong {
+    font-weight: normal;
 }
 
 mark {
@@ -43,15 +63,6 @@ button {
     font-size: 1em;
 }
 
-h1 {
-    font-weight: bold;
-    font-size: 1.3em;
-}
-
-p {
-    font-weight: initial;
-}
-
 i {
     font-size: 1.2em;
 }
@@ -59,8 +70,20 @@ i {
 @media screen and (max-width: 768px) 
 {   
     body  {
+        padding: 0;
         font-size: 20px;
     }
+
+    #container {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    footer {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
     
     
 }
