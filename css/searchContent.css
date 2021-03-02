@@ -5,6 +5,7 @@
 .searchBar {
     display: flex;
     justify-content: flex-start;
+    font-size: 1.2em;
 }
 
 .fa-map-marker-alt {
@@ -22,18 +23,16 @@
     border-right:none;
     background-color: white;
     padding-left: 7px;
-    width: 200px;
+    width: 220px;
     outline:none;
-    font-size: 0.8em;
 }
 
-.fa-search {
-    display: none;
-}
+
 
 #ville::placeholder {
     color: black;
     font-style: italic;
+    font-size: 1.4em;
 }
 
 .searchBar__btn-submit {
@@ -46,55 +45,35 @@
     cursor: pointer;
 } 
 
+.searchBar__btn-submit .fa-search {
+    display: none;    
+}
+
 
 /* filters */
 
 .filtersBar {
+    
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 20px;
+    /* border: solid seagreen; */
 }
 
 .filtersBar ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-left: 30px;
+    /* padding-left: 30px; */
+    /* border: red solid; */
 }
 
 .filtersBar p {
     font-weight: bold;
+    /* border: solid saddlebrown; */
+    margin-bottom: 36px;
 }
-
-.filtersBar .fas {
-    color: #0065FC;
-    background-color: #DEEBFF;
-    padding: 14px 15px;
-    border-radius: 50%;
-    margin-right: 10px;
-    position: absolute;
-    top: -2px;
-    left: -10px ;
-}
-
-.filtersBar .fa-money-bill-wave {
-    padding: 14px 12px;
-}
-
-.filtersBar .fa-child {
-    padding: 14px 17px;
-}
-
-.fa-heart {
-    padding: 14px 14px;
-}
-
-.fa-dog {
-    padding: 14px 13px;
-}
-
-
 
 .filtersBar button {
     margin-right: 24px;
@@ -124,6 +103,35 @@
     outline: none;
 }
 
+.filtersBar .fas {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 14px 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: absolute;
+    top: -2px;
+    left: -10px ;
+}
+
+.filtersBar .fa-money-bill-wave {
+    padding: 14px 12px;
+}
+
+.filtersBar .fa-child {
+    padding: 14px 17px;
+}
+
+.fa-heart {
+    padding: 14px 14px;
+}
+
+.fa-dog {
+    padding: 14px 12px;
+}
+
+
+
 
 @media screen and (max-width: 768px) 
 {
@@ -142,7 +150,7 @@
 
     }
 
-    .fa-search {
+    .searchBar__btn-submit .fa-search {
         display: inline;
     }
     	
@@ -151,7 +159,8 @@
     }
 
     .filtersBar p {
-
+        margin-top: 33px;
+        margin-bottom: 10px;
     }
 
     .filtersBar ul {

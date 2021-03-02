@@ -11,6 +11,7 @@
 }
 
 .resultatContent__row1 {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -277,7 +278,7 @@
 @media screen and (max-width: 768px) {
     .resultatContent__row1 {
         flex-direction: column-reverse;
-        padding-top: 30px;
+        padding-top: 15px;
     }
     
     .bigBox-2 {
