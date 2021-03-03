@@ -1,4 +1,9 @@
 
+footer { 
+    background-color: #F2F2F2;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
 .footer__nav {
     max-width: 1340px;
     width: 95%;
@@ -10,7 +15,7 @@
 }
 
 .footer__nav__rubrique {
-    margin-right: 10%;
+    margin-right: 9%;
 }
 
 .footer__nav__rubrique h2 {
@@ -24,6 +29,10 @@ footer ul {
 }
 
 @media screen and (max-width: 768px) {
+    footer { 
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
     .footer__nav {
         flex-direction: column;
     }

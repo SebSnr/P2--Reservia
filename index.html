@@ -17,7 +17,7 @@
                 <a href="index.html"><img src="./images/logo/Reservia.svg" alt="Reservia logo"></a>
                 <nav>
                     <ul>
-                        <li><a selected href="#ancreHebergement">Hébergement</a></li>
+                        <li><a href="#ancreHebergement">Hébergement</a></li>
                         <li><a href="#ancreActivite">Activités</a></li>
                     </ul>
                 </nav>
@@ -25,22 +25,22 @@
                     <button type="button" name="s_inscrire" disabled="">S'inscrire</button>
                 </p>
             </div>
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>            
-            <p>En plein <mark>centre ville</mark> ou en pleine <mark>nature</mark></p>
         </header>
         <main>
             <section id="searchContent">
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>            
+                <p>En plein centre ville ou en pleine nature</p>
                 <form class="searchBar" action="#" method="POST">
                     <i class="fas fa-map-marker-alt"></i>
-                    <label for="ville"></label>
-                    <input type="text" name="ville" id="ville" placeholder="Marseille, France">
+                    <label for="city"></label>
+                    <input type="text" name="city" id="city" placeholder="Marseille, France" required max-lenght="60" >
                     <button class="searchBar__btn-submit" type="submit" disabled><i class="fas fa-search"></i><span>Rechercher</span></button>
                 </form>
                     
                 <div class="filtersBar">
                         <p>Filtres</p>
                         <ul>
-                            <li><button type="button" name="filtre_economique" id="filtre_economique"></i><i class="fas fa-money-bill-wave"></i>Économique</button></li>
+                            <li><button type="button" name="filtre_economique" id="filtre_economique"><i class="fas fa-money-bill-wave"></i>Économique</button></li>
                             <li><button type="button" name="filtre_familial" id="filtre_familial"><i class="fas fa-child"></i>Familial</button></li>
                             <li><button type="button" name="filtre_romantique" id="filtre_romantique"><i class="fas fa-heart"></i>Romantique</button></li>
                             <li><button type="button" name="filtre_animaux" id="filtre_animaux"><i class="fas fa-dog"></i>Animaux autorisés</button></li>
