@@ -1,38 +1,38 @@
-
 footer { 
     background-color: #F2F2F2;
     padding-top: 30px;
     padding-bottom: 20px;
 }
+
 .footer__nav {
     max-width: 1340px;
     width: 95%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    /* margin: 30px auto 0 auto; */
-    /* border: solid hotpink; */
 }
 
-.footer__nav__rubrique {
+.footer__nav__list {
     margin-right: 9%;
 }
 
-.footer__nav__rubrique h2 {
+.footer__nav__list h2 {
     font-weight: bold;
 }
 
 footer ul {
-    /* border : saddlebrown solid; */
     padding-left: 0;
     line-height: 40px;
 }
+
+/**************** tablette portrait / mobile portrait /mobile paysage *****************/
 
 @media screen and (max-width: 768px) {
     footer { 
         padding-top: 20px;
         padding-bottom: 15px;
     }
+
     .footer__nav {
         flex-direction: column;
     }
@@ -41,5 +41,4 @@ footer ul {
         display: block;
         line-height: 55px;
     }
-        
 }

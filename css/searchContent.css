@@ -1,3 +1,6 @@
+
+/*************** section de recherche -- search bar ***************/
+
 .searchBar {
     margin-top: 35px;
     display: flex;
@@ -20,12 +23,11 @@
     border-right:none;
     background-color: white;
     padding-left: 7px;
-    padding-top: 10px;
+    padding-top: 9px;
     width: 220px;
     outline:none;
     font-size: 0.9em;
 }
-
 
 #city::placeholder {
     color: black;
@@ -47,10 +49,9 @@
 }
 
 
-/* filters */
+/*************** sélection des filtres / filters bar ***************/
 
 .filtersBar {
-    
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -68,17 +69,17 @@
 }
 
 .filtersBar button {
-    margin-right: 24px;
+    position: relative;
     display: flex;
     align-items: center;
     background-color: white;
-    position: relative;
-    cursor: pointer;
     padding: 12px 15px 12px 50px; 
+    margin-right: 24px;
+    margin-bottom: 20px;
     border-radius: 25px;
     border: solid #F2F2F2;
     font-weight: bold;  
-    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .filtersBar ul li:last-child button {
@@ -86,12 +87,12 @@
 }
 
 .filtersBar button:hover {
-    color: white;
     background-color: #0065FC;
+    color: white;
     border-radius: 25px;
     transition: color 0.5s; 
-    transform: 1s;
     transform: scale(1.1, 1.1);
+    transform: 1s;
 }
 
 .filtersBar button:focus {
@@ -101,12 +102,12 @@
 .filtersBar .fas {
     color: #0065FC;
     background-color: #DEEBFF;
-    padding: 14px 15px;
-    border-radius: 50%;
-    margin-right: 10px;
     position: absolute;
-    top: -2px;
     left: -10px ;
+    top: -2px;
+    border-radius: 50%;
+    padding: 14px 15px;
+    margin-right: 10px;
 }
 
 .filtersBar .fa-money-bill-wave {
@@ -117,14 +118,16 @@
     padding: 14px 17px;
 }
 
-.fa-heart {
+.filtersBar .fa-heart {
     padding: 14px 14px;
 }
 
-.fa-dog {
+.filtersBar .fa-dog {
     padding: 14px 12px;
 }
 
+/**************** tablette paysage *****************/
+/**************** tablette portrait / mobile portrait /mobile paysage *****************/
 
 @media screen and (max-width: 1155px) {
     .filtersBar p {
@@ -137,6 +140,7 @@
     }
 }
 
+/**************** tablette portrait / mobile portrait /mobile paysage *****************/
 
 @media screen and (max-width: 768px) 
 {
@@ -152,23 +156,16 @@
 
     #city {
         width: 60%;
-
     }
 
     .searchBar__btn-submit .fa-search {
         display: inline;
     }
     	
-    .filtersBar {
-        /* max-width: 100%; */
-    }
-
     .filtersBar p {
         margin-top: 33px;
         margin-bottom: 10px;
     }
-
-    
 }
 
 

@@ -1,31 +1,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
 @import "./header.css";
-@import "./footer.css";
 @import "./searchContent.css";
-@import "./resultats.css";
 @import "./resultatsContent.css";
+@import "./footer.css";
 
-/* Bleu : #0065FC
+/*************** styles réccurents de la page ***************/
+
+/* couleur réccurentes de la page :
+Bleu : #0065FC
 Bleu clair : #DEEBFF
-Fond gris : #F2F2F2 */
+Fond gris : #F2F2F2
+*/
 
 body {
     font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
+    color: black;
+    padding: 0px 15px 0px 15px;
 } 
+
 #container {
     max-width: 1340px;
-    padding: 0px 15px 0px 15px;
     margin: auto;
-}
-
-footer { 
-    background-color: #F2F2F2;
-    padding-top: 30px;
-    padding-bottom: 20px;
 }
 
 h1 {
@@ -47,10 +43,6 @@ li {
     list-style: none;
 }
 
-strong {
-    font-weight: normal;
-}
-
 button {
     font-size: 1em;
 }
@@ -60,26 +52,55 @@ i {
 }
 
 
-@media screen and (max-width: 1155px) {
+/********************* MEDIA QUERIES *********************/
+/*
+desktop fenêtre réduite (max-witdh : 1340px)
+tablette paysage (max 1155px)
+tablette portrait / mobile portrait /mobile paysage (max 768px)
+petit mobile (max 320px)
+*/
 
+/**************** tablette portrait / mobile portrait /mobile paysage *****************/
+/*************** styles réccurents de la page ***************/
+
+@media screen and (max-width: 1155px) {   
+    body {
+        padding: 0;
+    }
+
+    .banner, #searchContent, #resultatsContent > p, .resultatsContent__row-2 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #resultatsContent .bigBox-1 {
+    margin-left: 15px;
+    margin-right: 15px;
+    }
 }
 
-
 @media screen and (max-width: 768px) {   
-    body  {
-        /* padding: 0; */
-        font-size: 20px;
-    }
-
-    #container {
+    #searchContent, #resultatsContent > p, .resultatsContent__row-2 {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    footer {
-        padding-left: 20px;
-        padding-right: 20px;
-    } 
+    #resultatsContent .bigBox-1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .banner {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .banner > a {
+        margin-left: 20px;
+    }
+
+    .banner button {
+        margin-right: 20px;
+    }
 }
 
 

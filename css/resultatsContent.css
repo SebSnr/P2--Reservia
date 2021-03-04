@@ -1,22 +1,18 @@
-/* données générales */
+
+/*************** Informations point ***************/
 
 #resultatsContent .fa-info {
     color: #0065FC;
-    font: 15px;
-    height: auto;
     border: #F2F2F2 solid;
-    padding: 7px 13px;
     border-radius: 50%;
+    padding: 7px 13px;
     margin-right: 10px;
 }
 
-#resultatsContent > p {
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
+/*************** Eléments généraux de ResulatsContent row-1 et row-2 ***************/
 
-.resultatContent__row1 {
+
+.resultatContent__row-1 {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -30,7 +26,7 @@
     font-weight: bold;
 }
 
-#resultatsContent p, .fa-star--coloured, .fa-star--uncoloured{
+#resultatsContent p, .fa-star--coloured, .fa-star--uncoloured {
     font-size: 0.8em;
 }
 
@@ -46,7 +42,6 @@
     background-color: #F2F2F2;
     border-radius: 30px;
     padding: 0px 20px 0 20px;
-    /* padding: 1% 2% 0% 2%; */
 }
 
 .smallBox {
@@ -82,9 +77,15 @@
     display: flex;
 }
 
+#resultatsContent > p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
 
-/* Row 1 bigBox-1  */
-/* Partie hébergement */
+
+/*************** Row-1 bigBox-1 ***************/
+/*************** Hébergement ***************/
 
 .grid-1 {
     display: flex;
@@ -93,10 +94,7 @@
 }
 
 .bigBox-1 {
-    /* margin-right: 3%;
-    max-width: 60%; */
-    flex-basis: 60%;
-    padding-right: 0;
+    flex-basis: 67%;
 }
 
 .bigBox-1 .smallBox {
@@ -107,11 +105,36 @@
     margin-right: 15px;
 }
 
+.bigBox-1 .smallBox:nth-child(3), .bigBox-1 .smallBox:nth-child(6)  {
+    margin-right: 0;
+}   
+
+
+.bigBox-1 .smallBox__presentation {
+    margin: 7px;
+}
+
+.bigBox-1 h2, .bigBox-1 > a {
+    padding-left: 10px;
+}
+
+.bigBox-1 > a {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.bigBox-1 p {
+    line-height: 10px; 
+    margin-bottom: 9px;
+}
+
 .grid-1__smallBox--photo {
-    
     height: 110px;
     border-radius: 20px 20px 0 0;  
 }
+
+/*photos BigBox-1*/ /*photo hébergements*/
 
 .grid-1__smallBox--photo-1 {
     background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
@@ -132,44 +155,40 @@
     background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
 
-.bigBox-1 .smallBox__presentation {
-    margin: 7px;
-}
-
-.bigBox-1 > a {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-.bigBox-1 p {
-    line-height: 10px; 
-    margin-bottom: 9px;
-}
-
-/* Row 1 bigBox-2  */
-/* Partie les plus populaires */
+/*************** Row-1 bigBox-2 ***************/
+/*************** Les plus populaires ***************/
 
 .bigBox-2 {
-    flex-basis: 30%;
+    flex-basis: 25%;
 }   
 
 .bigBox-2 h2 {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .column3 {
-    height: 87%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 88%;
 }
 
 .column3 .smallBox {
     margin-bottom: 30px;
+}
 
+.bigBox-2 .smallBox a {
+    display: flex;
+}
+
+.bigBox-2 .smallBox__presentation {
+    margin: 15px 15px;
+}
+
+.bigBox-2 .smallBox__presentation p {
+    flex-grow: 3;
 }
 
 .column3__smallBox--photo {
@@ -177,6 +196,8 @@
     max-width: 600px;
     border-radius: 20px 0 0 20px;
 }
+
+/*photos BigBox-2*/ /*photo Les populaires*/
 
 .column3__smallBox--photo-1 {
     background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
@@ -190,34 +211,18 @@
     background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
 
-.bigBox-2 .smallBox a {
-    display: flex;
-}
+/*************** Row 2 ***************/
+/*************** Les activités ***************/
 
-.bigBox-2 .smallBox__presentation {
-    margin: 15px 15px;
-}
-
-.bigBox-2 .smallBox__presentation p {
-    margin-bottom: 25%;
-}
-
-
-/* Row 2 */
-/* Les activités */
-
-
-.resultatsContent__row2 {
+.resultatsContent__row-2 {
     background-color: inherit;
     height: 500px; 
-    /* max-width: 100%; */
     padding-top: 30px;
 }
 
 .grid-2 {
-    /* padding-top: 15px; */
-    display: flex;
     height: 80%;
+    display: flex;
     flex-direction : column;
     flex-wrap : wrap;
     align-content : space-between;
@@ -227,7 +232,6 @@
 
 .grid-2__box {
     width : 22%;
-    max-width : 22%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -278,28 +282,30 @@
     background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
 }
 
+/**************** tablette paysage *****************/
+
 
 @media screen and (max-width: 1155px) and (min-width: 769px) {
-    .resultatContent__row1 {
+    .resultatContent__row-1 {
         flex-direction: column-reverse;
     }
 
     .bigBox-2 {
         margin-bottom: 40px;
-    }   
+        max-width: 100%;
+        border-radius: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
 
     .column3 {
-        /* height: 87%; */
         flex-direction: row;
         justify-content: space-between;
     }
     
     .column3 .smallBox {
         width: 28%;
-    min-width: 180px;
-    max-height: 220px ;
-    margin-bottom: 30px;
-    margin-right: 15px;
     }
 
     .column3 .smallBox:last-child {
@@ -307,41 +313,66 @@
     }
     
     .column3__smallBox--photo {
-        max-width: 100px;
-        height: 170px;
-        border-radius: 20px 0 0 20px;
+        min-width: 30%;
+        height: 150px;
     }
-    
-    .bigBox-1 > a {
-        text-align: center;
-    }
-}
 
-@media screen and (max-width: 768px) {
-    .resultatContent__row1 {
-        padding-top: 15px;
-        flex-direction: column-reverse;
+    .grid-1 {
+        justify-content: space-between;
     }
-    
-    .bigBox{
+
+    .bigBox-1 {
+        background: none;
         padding-left: 0;
         padding-right: 0;
     }
 
-    .bigBox-2 {
-        /* max-width: 100%; */
-        border-radius: 0;
-    }   
+    .bigBox-1 .smallBox {
+        
+        box-shadow: 4px 4px 4px #F2F2F2;
+    }
     
-    .column3__smallBox--photo {
-        width: 40%;
-        border-radius: 20px 0 0 20px;
+    .bigBox-1 h2, .bigBox-1 > a {
+        padding-left: 0px;
+    }
+
+    .bigBox-1 > a {
+        text-align: center;
+    }
+    .resultatsContent__row-2 {
+        padding-top: 0px;
+    }
+}
+
+/**************** tablette portrait / mobile portrait /mobile paysage *****************/
+
+@media screen and (max-width: 768px) {
+    .resultatContent__row-1 {
+        padding-top: 15px;
+        flex-direction: column-reverse;
     }
     
     .grid-1, .grid-2 {
         flex-direction: column;
         flex-wrap: nowrap;
         height: 100%;
+    }
+
+    .bigBox{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .bigBox-2 {
+        max-width: 100%;
+        border-radius: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }   
+    
+    .column3__smallBox--photo {
+        width: 40%;
+        border-radius: 20px 0 0 20px;
     }
     
     .bigBox-1 {
@@ -357,13 +388,17 @@
         box-shadow: 4px 4px 4px #F2F2F2;
     }
 
+    .bigBox-1 h2, .bigBox-1 > a {
+        padding-left: 0px;
+    }
+
     .bigBox-1 > a {
         text-align: center;
         margin-top: 10px;
         margin-bottom: 20px;
     }
 
-    .resultatsContent__row2 {
+    .resultatsContent__row-2 {
         height: auto;
         padding-top: 0;
         margin-bottom: 30px;
