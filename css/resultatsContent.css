@@ -1,421 +1,439 @@
-/*************** Informations point ***************/
+/*************** Information point ***************/
 
 #resultatsContent .fa-info {
-  color: #0065fc;
-  border: #f2f2f2 solid;
-  border-radius: 50%;
-  padding: 7px 13px;
-  margin-right: 10px;
+    color: #0065fc;
+    border: #f2f2f2 solid;
+    border-radius: 50%;
+    padding: 7px 13px;
+    margin-right: 10px;
 }
 
-/*************** Eléments généraux de ResulatsContent row-1 et row-2 ***************/
+/*************** General elements of : ResulatsContent__row-1 and __row-2 ***************/
 
 .resultatContent__row-1 {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #resultatsContent h2 {
-  font-weight: bold;
-  font-size: 1.3em;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 #resultatsContent h3 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 #resultatsContent p,
 .fa-star--coloured,
 .fa-star--uncoloured {
-  font-size: 0.8em;
+    font-size: 0.8em;
 }
 
 .fa-star--coloured {
-  color: #0065fc;
+    color: #0065fc;
 }
 
 .fa-star--uncoloured {
-  color: #d6d6d6;
+    color: #d6d6d6;
 }
 
 .bigBox {
-  background-color: #f2f2f2;
-  border-radius: 30px;
-  padding: 0px 20px 0 20px;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 0px 20px 0 20px;
+	margin-left: 15px;
+	margin-right: 15px
 }
 
 .smallBox {
-  background-color: white;
-  border-radius: 30px;
-  padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+	box-shadow: 4px 4px 4px #f2f2f2;
 }
 
 .smallBox--photo {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .smallBox__presentation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .smallBox__presentation h3 {
-  margin-bottom: 0;
-  margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .smallBox__presentation p span:last-child,
 .bigBox-1 a:last-child {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .stars {
-  display: flex;
+    display: flex;
 }
 
 #resultatsContent > p {
-  display: flex;
-  align-items: center;
-  margin: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
 
 /*************** Row-1 bigBox-1 ***************/
 /*************** Hébergement ***************/
 
 .grid-1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .bigBox-1 {
-  flex-basis: 67%;
+    flex-basis: 67%;
 }
 
 .bigBox-1 .smallBox {
-  width: 28%;
-  min-width: 180px;
-  max-height: 220px;
-  margin-bottom: 30px;
-  margin-right: 15px;
+    width: 28%;
+    min-width: 180px;
+    max-height: 220px;
+    margin-bottom: 30px;
+    margin-right: 15px;
 }
 
 .bigBox-1 .smallBox:nth-child(3),
 .bigBox-1 .smallBox:nth-child(6) {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .bigBox-1 .smallBox__presentation {
-  margin: 7px;
+    margin: 7px;
 }
 
 .bigBox-1 h2,
 .bigBox-1 > a {
-  padding-left: 10px;
+    padding-left: 10px;
 }
 
 .bigBox-1 > a {
-  display: block;
-  margin-top: 15px;
-  margin-bottom: 30px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 .bigBox-1 p {
-  line-height: 10px;
-  margin-bottom: 9px;
+    line-height: 10px;
+    margin-bottom: 9px;
 }
 
 .grid-1__smallBox--photo {
-  height: 110px;
-  border-radius: 20px 20px 0 0;
+    height: 110px;
+    border-radius: 20px 20px 0 0;
 }
 
-/*photos BigBox-1*/ /*photo hébergements*/
+/* photos BigBox-1 */ /* photos hébergements */
 
 .grid-1__smallBox--photo-1 {
-  background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .grid-1__smallBox--photo-2 {
-  background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
 }
 .grid-1__smallBox--photo-3 {
-  background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
 }
 .grid-1__smallBox--photo-4 {
-  background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
 }
 .grid-1__smallBox--photo-5 {
-  background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
 }
 .grid-1__smallBox--photo-6 {
-  background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
 
 /*************** Row-1 bigBox-2 ***************/
 /*************** Les plus populaires ***************/
 
 .bigBox-2 {
-  flex-basis: 25%;
+    flex-basis: 25%;
 }
 
 .bigBox-2 h2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .column3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 88%;
 }
 
 .column3 .smallBox {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .bigBox-2 .smallBox a {
-  display: flex;
+    display: flex;
 }
 
 .bigBox-2 .smallBox__presentation {
-  margin: 15px 15px;
+    margin: 15px 15px;
 }
 
 .bigBox-2 .smallBox__presentation p {
-  flex-grow: 3;
+    flex-grow: 3;
 }
-
 .column3__smallBox--photo {
-  min-width: 100px;
-  max-width: 100px;
-  border-radius: 20px 0 0 20px;
+	min-width: 40%;
+    max-width: 40%;
+    min-height: 120px;
+	border-radius: 20px 0 0 20px;
+
 }
 
-/*photos BigBox-2*/ /*photo Les populaires*/
+/* photos BigBox-2 */ /* photos Les populaires */
 
 .column3__smallBox--photo-1 {
-  background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
 }
 
 .column3__smallBox--photo-2 {
-  background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
 }
 
 .column3__smallBox--photo-3 {
-  background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
 
 /*************** Row 2 ***************/
 /*************** Les activités ***************/
 
 .resultatsContent__row-2 {
-  background-color: inherit;
-  height: 500px;
-  padding-top: 30px;
+    background-color: inherit;
+    height: 500px;
+    padding-top: 30px;
 }
 
 .grid-2 {
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: space-between;
-  align-items: stretch;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .grid-2__box {
-  width: 22%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .grid-2__box-1,
 .grid-2__box-4 {
-  flex: 1 1 100%;
+    flex: 1 1 100%;
 }
 
 .grid-2__box-2,
 .grid-2__box-3,
 .grid-2__box-5,
 .grid-2__box-6 {
-  flex: 0 0 45%;
+    flex: 0 0 45%;
 }
 
 .grid-2 h3 {
-  flex-basis: 50px;
-  line-height: 50px;
-  margin: 0;
-  padding-top: auto;
-  padding-left: 15px;
+    flex-basis: 50px;
+	margin-bottom: 0;
+    padding-left: 15px;
 }
 
 .grid-2 .smallBox {
-  padding: 0;
-  box-shadow: 4px 4px 4px #f2f2f2;
+    padding: 0;
 }
 
 .grid-2__smallBox--photo {
-  height: 100%;
-  border-radius: 20px 20px 0 0;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
 }
 
+/* photos grid-2 */ /* photos Activités */
+
 .grid-2__smallBox--photo-1 {
-  background-image: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-image: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 }
 .grid-2__smallBox--photo-2 {
-  background-image: url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-image: url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
 }
 .grid-2__smallBox--photo-3 {
-  background-image: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-image: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
 }
 .grid-2__smallBox--photo-4 {
-  background-image: url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-image: url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
 }
 .grid-2__smallBox--photo-5 {
-  background-image: url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-image: url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
 }
 .grid-2__smallBox--photo-6 {
-  background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
 }
 
 /**************** tablette paysage *****************/
 
-@media screen and (max-width: 1155px) and (min-width: 769px) {
-  .resultatContent__row-1 {
-    flex-direction: column-reverse;
-  }
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .resultatContent__row-1 {
+        flex-direction: column-reverse;
+    }
 
-  .bigBox-2 {
-    margin-bottom: 40px;
-    max-width: 100%;
-    border-radius: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+    .bigBox-2 {
+        margin-bottom: 40px;
+        max-width: 100%;
+        border-radius: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+		margin-left: 0;
+		margin-right: 0;
+    }
 
-  .column3 {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    .column3 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-  .column3 .smallBox {
-    width: 28%;
-  }
+    .column3 .smallBox {
+        width: 28%;
+    }
 
-  .column3 .smallBox:last-child {
-    margin-right: 0;
-  }
+    .column3 .smallBox:last-child {
+        margin-right: 0;
+    }
 
-  .column3__smallBox--photo {
-    min-width: 30%;
-    max-width: 30%;
-    height: 150px;
-  }
+    .column3__smallBox--photo {
+        min-width: 30%;
+        max-width: 30%;
+        height: 150px;
+    }
 
-  .grid-1 {
-    justify-content: space-between;
-  }
+    .grid-1 {
+        justify-content: space-between;
+    }
 
-  .bigBox-1 {
-    background: none;
-    padding-left: 0;
-    padding-right: 0;
-  }
+    .bigBox-1 {
+        background: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-  .bigBox-1 .smallBox {
-    box-shadow: 4px 4px 4px #f2f2f2;
-  }
+    .bigBox-1 .smallBox {
+        box-shadow: 4px 4px 4px #f2f2f2;
+    }
 
-  .bigBox-1 h2,
-  .bigBox-1 > a {
-    padding-left: 0px;
-  }
+    .bigBox-1 h2,
+    .bigBox-1 > a {
+        padding-left: 0px;
+    }
 
-  .resultatsContent__row-2 {
-    padding-top: 0px;
-  }
+    .resultatsContent__row-2 {
+        padding-top: 0px;
+    }
 }
 
 /**************** tablette portrait / mobile portrait /mobile paysage *****************/
 
 @media screen and (max-width: 768px) {
-  .resultatContent__row-1 {
-    padding-top: 15px;
-    flex-direction: column-reverse;
-  }
+    .resultatContent__row-1 {
+        padding-top: 15px;
+        flex-direction: column-reverse;
+    }
 
-  .grid-1,
-  .grid-2 {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: 100%;
-  }
+    .grid-1,
+    .grid-2 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
 
-  .bigBox {
-    padding-left: 0;
-    padding-right: 0;
-  }
+    .bigBox {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-  .bigBox-2 {
-    max-width: 100%;
-    border-radius: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+    .bigBox-2 {
+        max-width: 100%;
+        border-radius: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+		margin-left: 0;
+		margin-right: 0;
+    }
 
-  .column3__smallBox--photo {
-    min-width: 40%;
-    max-width: 40%;
-    min-height: 122px;
-    border-radius: 20px 0 0 20px;
-  }
+    .column3__smallBox--photo {
+        width: 40%;
+        min-height: 122px;
+        border-radius: 20px 0 0 20px;
+    }
 
-  .bigBox-1 {
-    margin-top: 20px;
-    background: none;
-  }
+    .bigBox-1 {
+        margin-top: 20px;
+        background: none;
+    }
 
-  .bigBox-1 .smallBox {
-    margin-right: 0;
-    margin-left: 0;
-    width: auto;
-    box-shadow: 4px 4px 4px #f2f2f2;
-  }
+    .bigBox-1 .smallBox {
+        margin-right: 0;
+        margin-left: 0;
+        width: auto;
+        box-shadow: 4px 4px 4px #f2f2f2;
+    }
 
-  .bigBox-1 h2,
-  .bigBox-1 > a {
-    padding-left: 0px;
-  }
+    .bigBox-1 h2,
+    .bigBox-1 > a {
+        padding-left: 0px;
+    }
 
-  .bigBox-1 > a {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
+    .bigBox-1 > a {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 
-  .resultatsContent__row-2 {
-    height: auto;
-    padding-top: 0;
-    margin-bottom: 30px;
-  }
+    .resultatsContent__row-2 {
+        height: auto;
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
 
-  .grid-2__box {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
-  }
+    .grid-2__box {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
 
-  .grid-2__smallBox--photo {
-    min-height: 150px;
-  }
+    .grid-2__smallBox--photo {
+        min-height: 150px;
+    }
 
-  h2 {
-    line-height: 60px;
-  }
+    #resultatsContent h2 {
+        line-height: 60px;
+    }
+
+	.grid-2 h3 {
+		flex-basis: 37px;
+	}
+}
+
+/**************** petit mobile portrait *****************/
+
+@media screen and (max-width: 340px) {
+	#resultatsContent .bigBox-1 h2 {
+        line-height: 30px;
+	}
 }

@@ -1,122 +1,128 @@
+/********************* Header *********************/
+
 .banner {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .banner > a {
-  margin-right: auto;
-  padding-top: 33px;
-  margin-bottom: 20px;
+    margin-right: auto;
+    padding-top: 33px;
+    margin-bottom: 20px;
 }
 
 header nav ul,
 header p {
-  margin: 0;
-  display: flex;
+    margin: 0;
+    display: flex;
 }
 
 header nav ul li {
-  margin-right: 30px;
-  padding-top: 50px;
+    margin-right: 60px;
+    padding-top: 50px;
 }
 
 header nav ul li a {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 header nav li:hover {
-  border-top: 3px solid #0065fc;
-  cursor: pointer;
+    border-top: 3px solid #0065fc;
+    cursor: pointer;
 }
 
 header nav li:hover a {
-  color: #0065fc;
+    color: #0065fc;
 }
 
 .banner button {
-  font-weight: bold;
-  color: #0065fc;
-  background: none;
-  border: none;
-  padding-top: 50px;
+    font-weight: bold;
+    color: #0065fc;
+    background: none;
+    border: none;
+    padding-top: 50px;
 }
 
 .banner button:hover {
-  cursor: pointer;
-  border-top: 3px solid #0065fc;
+    cursor: pointer;
+    border-top: 3px solid #0065fc;
 }
 
 /**************** tablette portrait / mobile portrait /mobile paysage *****************/
 
 @media screen and (max-width: 768px) {
-  header {
-    margin-top: 20px;
-  }
+    header {
+        margin-top: 20px;
+    }
 
-  .banner {
-    padding-left: 0;
-    padding-right: 0;
-  }
+    .banner > a {
+        margin-left: 20px;
+        padding-top: 20px;
+    }
 
-  .banner > a {
-    margin-left: 20px;
-    padding-top: 20px;
-  }
+    .banner button {
+        margin-right: 20px;
+    }
 
-  .banner button {
-    margin-right: 20px;
-  }
+    header img {
+        width: 150%;
+    }
 
-  header img {
-    width: 150%;
-  }
+    header nav {
+        order: 3;
+        width: 100%;
+    }
 
-  header nav {
-    order: 3;
-    width: 100%;
-  }
+    header nav ul {
+        align-items: stretch;
+        padding-left: 0;
+    }
 
-  header nav ul {
-    align-items: stretch;
-    padding-left: 0;
-  }
+    header nav ul li {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin: 0 0 35px 0;
+        text-align: center;
+        border-bottom: solid #f2f2f2 3px;
+    }
 
-  header nav ul li {
-    width: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin: 0 0 35px 0;
-    text-align: center;
-    border-bottom: solid #f2f2f2 3px;
-  }
+    header nav li:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065fc;
+        cursor: pointer;
+    }
 
-  header nav li:hover {
-    border-top: none;
-    border-bottom: 3px solid #0065fc;
-    cursor: pointer;
-  }
-
-  .banner button:hover {
-    border-top: none;
-  }
+    .banner button:hover {
+        border-top: none;
+    }
 }
 
 /**************** petit mobile portrait *****************/
 
 @media screen and (max-width: 340px) {
-  header img {
-    margin: auto;
-    width: 70%;
-  }
-  .banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+	.banner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+    
+	header img {
+        width: 70%;
+    }
+	
+	.banner > a {
+		margin-left: auto;
+		text-align: center;
+		width: 100%;
+        padding-top: 0;
 
-  .banner button {
-    padding-top: 0px;
-  }
+	}
+
+    .banner button {
+		padding-top: 0px;
+		margin-right: 0;
+    }
 }

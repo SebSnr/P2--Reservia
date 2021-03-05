@@ -1,189 +1,181 @@
 /*************** section de recherche -- search bar ***************/
 
 .searchBar {
-  margin-top: 35px;
-  display: flex;
-  justify-content: flex-start;
-  font-size: 1.2em;
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.2em;
 }
 
 .fa-map-marker-alt {
-  font-size: 1.2em;
-  color: black;
-  background-color: #f2f2f2;
-  padding: 12px 15px;
-  border-radius: 8px 0 0 8px;
+    font-size: 1.2em;
+    color: black;
+    background-color: #f2f2f2;
+    padding: 12px 15px;
+    border-radius: 8px 0 0 8px;
 }
 
 #city {
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
-  border-left: none;
-  border-right: none;
-  background-color: white;
-  padding-left: 7px;
-  padding-top: 8px;
-  width: 220px;
-  outline: none;
-  font-size: 0.9em;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: none;
+    border-right: none;
+    background-color: white;
+    padding-left: 7px;
+    width: 220px;
+    outline: none;
+    font-size: 0.9em;
 }
 
 #city::placeholder {
-  color: black;
+    color: black;
 }
 
 .searchBar__btn-submit {
-  border-radius: 0 8px 8px 0;
-  border: none;
-  background-color: #0065fc;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: white;
-  cursor: pointer;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    background-color: #0065fc;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    cursor: pointer;
 }
 
 .searchBar__btn-submit .fa-search {
-  display: none;
+    display: none;
 }
 
-/*************** sélection des filtres / filters bar ***************/
+/*************** sélection des filtres -- filters bar ***************/
 
 .filtersBar {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .filtersBar ul {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .filtersBar p {
-  font-weight: bold;
-  margin-bottom: 36px;
+    font-weight: bold;
+    margin-bottom: 36px;
 }
 
 .filtersBar button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  background-color: white;
-  padding: 12px 15px 12px 50px;
-  margin-right: 24px;
-  margin-bottom: 20px;
-  border-radius: 25px;
-  border: solid #f2f2f2;
-  font-weight: bold;
-  cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 12px 15px 12px 50px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: solid #f2f2f2;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .filtersBar ul li:last-child button {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .filtersBar button:hover {
-  background-color: #0065fc;
-  color: white;
-  border-radius: 25px;
-  transition: color 0.5s;
-  transform: scale(1.1, 1.1);
-  transform: 1s;
+    background-color: #0065fc;
+    color: white;
+    border-radius: 25px;
+    transition: color 0.5s;
+    transform: scale(1.1, 1.1);
 }
 
 .filtersBar button:focus {
-  outline: none;
+    outline: none;
 }
 
 .filtersBar .fas {
-  color: #0065fc;
-  background-color: #deebff;
-  position: absolute;
-  left: -10px;
-  top: -2px;
-  border-radius: 50%;
-  padding: 14px 15px;
-  margin-right: 10px;
+    color: #0065fc;
+    background-color: #deebff;
+    position: absolute;
+    left: -10px;
+    top: -2px;
+    border-radius: 50%;
+    padding: 14px 15px;
+    margin-right: 10px;
 }
 
 .filtersBar .fa-money-bill-wave {
-  padding: 14px 12px;
+    padding: 14px 12px;
 }
 
 .filtersBar .fa-child {
-  padding: 14px 17px;
+    padding: 14px 17px;
 }
 
 .filtersBar .fa-heart {
-  padding: 14px 14px;
+    padding: 14px 14px;
 }
 
 .filtersBar .fa-dog {
-  padding: 14px 12px;
+    padding: 14px 12px;
 }
 
-/**************** tablette paysage *****************/
-/**************** tablette portrait / mobile portrait /mobile paysage *****************/
+/**************** tablette paysage *****************/ 
 
-@media screen and (max-width: 1155px) {
-  .filtersBar p {
-    margin-top: 30px;
-    margin-bottom: 0px;
-    width: 100%;
-  }
-  .filtersBar ul {
-    padding-left: 0;
-  }
+@media screen and (max-width: 1024px) {
+    .filtersBar p {
+        margin-top: 30px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    .filtersBar ul {
+        padding-left: 0;
+    }
 }
 
 /**************** tablette portrait / mobile portrait /mobile paysage *****************/
+
 
 @media screen and (max-width: 768px) {
-  .searchBar {
-    margin-top: 50px;
-    justify-content: center;
-    font-size: 1.4em;
-  }
+    .searchBar {
+        margin-top: 50px;
+        justify-content: center;
+    }
 
-  .searchBar span {
-    display: none;
-  }
+    .searchBar span {
+        display: none;
+    }
 
-  #city {
-    width: 60%;
-  }
+    #city {
+        width: 60%;
+    }
 
-  .searchBar__btn-submit .fa-search {
-    display: inline;
-  }
+    .searchBar__btn-submit .fa-search {
+        display: inline;
+    }
 
-  .filtersBar p {
-    margin-top: 33px;
-    margin-bottom: 10px;
-  }
+    .filtersBar p {
+        margin-top: 33px;
+        margin-bottom: 10px;
+    }
 }
 
 /**************** petit mobile portrait *****************/
 
 @media screen and (max-width: 340px) {
-  #city {
-    width: 100%;
-    outline: none;
-    font-size: 0.8em;
-  }
+    #city {
+        width: 100%;
+        outline: none;
+    }
 
-  .searchBar {
-    font-size: 1em;
-  }
+    .fa-map-marker-alt {
+        font-size: 1em;
+        padding: 7px 10px;
+    }
 
-  .fa-map-marker-alt {
-    font-size: 1em;
-    padding: 7px 10px;
-  }
-
-  .searchBar__btn-submit {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+    .searchBar__btn-submit {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
