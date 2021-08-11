@@ -3,13 +3,15 @@
 
 🔨 Skills : HTML / CSS
 
-Site online : https://sebsnr.github.io/P2--Reservia/
+💻 Site online : https://sebsnr.github.io/P2--Reservia/
+
+🎓 Powerpoint détaillé de la soutenance : [Reservia-soutenance.odp](https://github.com/SebSnr/P2--Reservia/files/6967314/Reservia-soutenance.odp)
 
 ![Reservia](https://user-images.githubusercontent.com/78140833/128994283-45500a84-4f30-413a-b014-7fc3b46788dd.png)
 
 L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia".
 
-Énoncé : https://openclassrooms.com/fr/paths/185/projects/639/assignment
+📝 https://openclassrooms.com/fr/paths/185/projects/639/assignment
 
 ## Cahier des charges
 - L'integration doit se faire en HTML5 & CSS3, sans framework (bootstrap par exemple)
