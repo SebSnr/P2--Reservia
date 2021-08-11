@@ -9,7 +9,7 @@
 
 ![Reservia](https://user-images.githubusercontent.com/78140833/128994283-45500a84-4f30-413a-b014-7fc3b46788dd.png)
 
-L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia".
+🎯 L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia".
 
 📝 https://openclassrooms.com/fr/paths/185/projects/639/assignment
 
