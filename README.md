@@ -1,5 +1,5 @@
 ### Projet 2 du parcours Développeur web chez OpenClassrooms
-# Transformez une maquette en site web
+#### Transformez une maquette en site web
 
 🔨 Skills : HTML / CSS
 
