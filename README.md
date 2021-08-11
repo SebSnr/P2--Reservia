@@ -8,7 +8,8 @@ Site online : https://sebsnr.github.io/P2--Reservia/
 ![Reservia](https://user-images.githubusercontent.com/78140833/128994283-45500a84-4f30-413a-b014-7fc3b46788dd.png)
 
 L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia".
-https://openclassrooms.com/fr/paths/185/projects/639/assignment
+
+Énoncé : https://openclassrooms.com/fr/paths/185/projects/639/assignment
 
 ## Cahier des charges
 - L'integration doit se faire en HTML5 & CSS3, sans framework (bootstrap par exemple)
